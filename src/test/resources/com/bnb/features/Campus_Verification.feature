@@ -1,10 +1,9 @@
-Feature: Information Verification with DataBase
-@db 
-Scenario Outline: Team members Information Verification with DataBase
+Feature: Campus Information Verification
+
+Scenario Outline: Campus Verification
 	Given The user is on login page 
 	When The user enters credentials "<email>" and "<password>" 
-	Then the user is on the my team page  
-	Then team info should match the db records using "<email>" 
+	Then campus should be displayed  
 	
 	   Examples:
     | email                     |   password        |

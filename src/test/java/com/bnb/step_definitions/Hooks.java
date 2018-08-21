@@ -25,7 +25,6 @@ public class Hooks {
 	@Before("@db")
 	public void setUpDBConnection() {
 		BrowserUtils.waitFor(5);
-		System.out.println("HHHHHEEEELLLLOOOO");
 		DBUtils.createConnection();
 	}
 
