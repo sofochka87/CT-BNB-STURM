@@ -11,11 +11,11 @@ import cucumber.api.junit.Cucumber;
 				"html:target/cucumber-report",
 				"json:target/cucumber.json"
 		},
-		tags="@temp",
+		tags= {"@db", "@temp"},
 		features = "src/test/resources/com/bnb/features",
 		glue = "com/bnb/step_definitions",
 		dryRun = false
 		)
-public class CukesRunner {
+public class CukesRunnerSofya {
 
 }

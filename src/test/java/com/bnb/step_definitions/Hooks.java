@@ -1,14 +1,13 @@
 package com.bnb.step_definitions;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
+import com.bnb.utilities.BrowserUtils;
 import com.bnb.utilities.ConfigurationReader;
+import com.bnb.utilities.DBUtils;
 import com.bnb.utilities.Driver;
-
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -23,6 +22,17 @@ public class Hooks {
 		Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 	}
 
+	@Before("@db")
+	public void setUpDBConnection() {
+		BrowserUtils.waitFor(5);
+		System.out.println("HHHHHEEEELLLLOOOO");
+		DBUtils.createConnection();
+	}
+
+	@After("@db")
+	public void tearDownDBConnection() {
+		DBUtils.destroy();
+	}
 
 	@After
 	public void tearDown(Scenario scenario) {
