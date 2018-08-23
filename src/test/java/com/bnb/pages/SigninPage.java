@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.bnb.utilities.Driver;
 
 public class SigninPage {
-	public SigninPage()throws Exception {
+	public SigninPage(){
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
@@ -23,6 +23,6 @@ public class SigninPage {
 	@FindBy(xpath= "//div[@class='cdk-live-announcer-element cdk-visually-hidden']")
 	public WebElement announcerElement;
 	
-	@FindBy(xpath = "//div[@class='cdk-overlay-container']")
-	public WebElement overlayContainer;
+	@FindBy(xpath = "/html/body/div[2]")
+	public WebElement message;
 }

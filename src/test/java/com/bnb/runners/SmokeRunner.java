@@ -10,12 +10,13 @@ import cucumber.api.junit.Cucumber;
 		plugin =  {"pretty", 
 				"html:target/cucumber-report",
 				"json:target/cucumber.json"
-		},  //"@db",
-		tags= {"@temp"},
+		},
+		tags= {"@smoke"},
 		features = "src/test/resources/com/bnb/features",
 		glue = "com/bnb/step_definitions",
 		dryRun = false
 		)
-public class CukesRunnerSofya {
+
+public class SmokeRunner {
 
 }

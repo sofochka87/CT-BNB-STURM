@@ -1,5 +1,5 @@
 Feature: Campus Information Verification with DataBase
-@db @temp
+@db
 Scenario Outline: Campus Information Verification with DataBase
 	Given The user is on login page 
 	When The user enters credentials "<email>" and "<password>" 

@@ -1,5 +1,5 @@
 Feature: Positive Login verification
-
+@smoke
 Scenario Outline: Login with Valid credentials
     
     Given The user is on login page

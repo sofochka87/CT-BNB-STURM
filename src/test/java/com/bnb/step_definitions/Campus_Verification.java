@@ -13,4 +13,6 @@ public class Campus_Verification {
 		BrowserUtils.waitFor(5);
 		assertEquals("VA",mapPage.campus.getText());
 	}
+	
+	
 }

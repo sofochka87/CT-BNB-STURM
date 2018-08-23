@@ -7,10 +7,11 @@ import com.bnb.pages.SigninPage;
 import com.bnb.utilities.BrowserUtils;
 public class Login_Negative {
 
-	@Then("Error Message status code should be {string}")
-	public void error_Message_status_code_should_be(String status_code) throws Exception {
+	@Then("Message status code should be {string}")
+	public void message_status_code_should_be(String status_code){
 		BrowserUtils.waitFor(2);
 		SigninPage signinPage = new SigninPage();
-        assertTrue(signinPage.overlayContainer.getText().contains(status_code));
+		System.out.println(signinPage.message.getText());
+        assertTrue(signinPage.message.getText().contains(status_code));
 	}
 }
