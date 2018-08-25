@@ -6,7 +6,7 @@ import com.bnb.pages.HuntPage;
 
 import cucumber.api.java.en.Then;
 
-public class Free_spot_Verification {
+public class SPA1761_Free_spot_Verification {
 
 	@Then("Free spots should be displayed")
 	public void free_spots_should_be_displayed() {

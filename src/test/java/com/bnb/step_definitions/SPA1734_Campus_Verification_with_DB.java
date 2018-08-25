@@ -8,7 +8,7 @@ import com.bnb.utilities.DBUtils;
 
 import cucumber.api.java.en.Then;
 
-public class Campus_Verification_with_DB {
+public class SPA1734_Campus_Verification_with_DB {
 
 	@Then("correct campus should be displayed for {string}")
 	public void correct_campus_should_be_displayed_for(String email) throws Exception {

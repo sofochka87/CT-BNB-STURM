@@ -9,7 +9,7 @@ import com.bnb.pages.TeamPage;
 import com.bnb.utilities.BrowserUtils;
 import cucumber.api.java.en.Then;
 
-public class Team_Info_verification {
+public class SPA1723_Team_Info_verification {
 
 	@Then("the user is on the my team page")
 	public void the_user_is_on_the_my_team_page() throws Exception {

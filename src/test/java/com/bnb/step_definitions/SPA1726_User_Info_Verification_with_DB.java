@@ -11,7 +11,7 @@ import com.bnb.utilities.DBUtils;
 
 import cucumber.api.java.en.Then;
 
-public class User_Info_Verification_with_DB {
+public class SPA1726_User_Info_Verification_with_DB {
 
 	@Then("user info should match the db records using {string}")
 	public void user_info_should_match_the_db_records_using(String email) throws Exception {

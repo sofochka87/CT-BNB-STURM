@@ -5,7 +5,7 @@ import com.bnb.utilities.BrowserUtils;
 import static org.junit.Assert.assertEquals;
 import cucumber.api.java.en.Then;
 
-public class User_Info_verification {
+public class SPA1722_User_Info_verification {
 
 	@Then("The user clicks on link MY")
 	public void the_user_clicks_on_link_MY() throws Exception {

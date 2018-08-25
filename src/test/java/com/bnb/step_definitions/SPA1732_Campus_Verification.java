@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 import com.bnb.pages.MapPage;
 import com.bnb.utilities.BrowserUtils;
-public class Campus_Verification {
+public class SPA1732_Campus_Verification {
 
 	@Then("campus should be displayed")
 	public void campus_should_be_displayed() throws Exception {

@@ -8,7 +8,7 @@ import com.bnb.utilities.BrowserUtils;
 import static org.junit.Assert.assertTrue;
 import cucumber.api.java.en.Then;
 
-public class Room_Reservation_and_Cancelation {
+public class SPA1760_Room_Reservation_and_Cancelation {
 
 	HuntPage huntPage = new HuntPage();
 
